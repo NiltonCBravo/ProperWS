@@ -66,8 +66,8 @@ namespace proper_ws
             {
 
                 //ucser_agroamigo_desa
-                //connection_ = @"Data Source= migivaazure.database.windows.net;Initial Catalog=BD_AGROAMIGO_DESA;Persist Security Info=True;User ID=ucown_agroamigo_desa;Password=D3s4rr0ll024;";
-                connection_ = @"";
+                connection_ = @"Data Source= 10.1.10.4;Initial Catalog=BD_PACKING_AGROMIGIVA_DESA;Persist Security Info=True;User ID=ucown_agroamigo_desa;Password=D3s4Own06;";
+                //connection_ = @"Data Source= 128.19.0.4;Initial Catalog=BD_PACKING_CALIFORNIA_DESA;Persist Security Info=True;User ID=aga.dig;Password=aga.dig;";
             }
 
             // agroamigo qa
