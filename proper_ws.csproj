@@ -209,6 +209,8 @@
     <Content Include="wsp.asmx" />
     <Content Include="wsp_qa.asmx" />
     <Content Include="wsp_sisp_test.asmx" />
+    <Content Include="Ws\WscalUsers.asmx" />
+    <Content Include="Ws\WsProcesarSubidas.asmx" />
     <Content Include="ws_dev.asmx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -258,6 +260,7 @@
     <Compile Include="cls_sp_SubidasLog.cs" />
     <Compile Include="cls_sp_SubidasLog_Asist.cs" />
     <Compile Include="cls_sp_Subidas_Asist.cs" />
+    <Compile Include="Configuration\AppSettings.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,6 +270,8 @@
     </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Database_Asist.cs" />
+    <Compile Include="Data\Azure.cs" />
+    <Compile Include="Data\DB.cs" />
     <Compile Include="da_Web_Service.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -279,12 +284,21 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="GlobalVariables.cs" />
+    <Compile Include="Interfaces\IDownloadUserService.cs" />
+    <Compile Include="Interfaces\IUploadService.cs" />
+    <Compile Include="Model\ContenedorHora.cs" />
+    <Compile Include="Model\MessageResponse.cs" />
+    <Compile Include="Model\SimpleRequest.cs" />
+    <Compile Include="Model\UploadDetailRequest.cs" />
+    <Compile Include="Model\UploadRequest.cs" />
     <Compile Include="ObjPadre.cs" />
     <Compile Include="Obj_Subidas.cs" />
     <Compile Include="Obj_SubidasLog.cs" />
     <Compile Include="Obj_SubidasLog_Asist.cs" />
     <Compile Include="Obj_Subidas_Asist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DownloadUserService.cs" />
+    <Compile Include="Services\UploadService.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -299,6 +313,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Utils\LoggerHelper.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -346,6 +361,8 @@
       <DependentUpon>wsp_sisp_test.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Ws\WscalUsers.asmx.cs" />
+    <Compile Include="Ws\WsProcesarSubidas.asmx.cs" />
     <Compile Include="ws_dev.asmx.cs">
       <DependentUpon>ws_dev.asmx</DependentUpon>
       <SubType>Component</SubType>
