@@ -209,8 +209,7 @@
     <Content Include="wsp.asmx" />
     <Content Include="wsp_qa.asmx" />
     <Content Include="wsp_sisp_test.asmx" />
-    <Content Include="Ws\WscalUsers.asmx" />
-    <Content Include="Ws\WsProcesarSubidas.asmx" />
+    <Content Include="Ws\WsSecutiryInspectionProd.asmx" />
     <Content Include="ws_dev.asmx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -361,8 +360,9 @@
       <DependentUpon>wsp_sisp_test.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Ws\WscalUsers.asmx.cs" />
-    <Compile Include="Ws\WsProcesarSubidas.asmx.cs" />
+    <Compile Include="Ws\WsSecutiryInspectionProd.asmx.cs">
+      <DependentUpon>WsSecutiryInspectionProd.asmx</DependentUpon>
+    </Compile>
     <Compile Include="ws_dev.asmx.cs">
       <DependentUpon>ws_dev.asmx</DependentUpon>
       <SubType>Component</SubType>

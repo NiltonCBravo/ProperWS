@@ -16,7 +16,6 @@ namespace proper_ws.Data
         private readonly BlobServiceClient _blobServiceClient;
         
         private const string AzureStorageContainerName = "agrosispkgseguridadprod";
-
         
         public Azure()
         {
