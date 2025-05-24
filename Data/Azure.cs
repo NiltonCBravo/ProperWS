@@ -15,7 +15,7 @@ namespace proper_ws.Data
         private readonly string connectionString;
         private readonly BlobServiceClient _blobServiceClient;
         
-        private const string AzureStorageContainerName = "agrosispkgseguridadtest";
+        private const string AzureStorageContainerName = "agrosispkgseguridadprod";
 
         
         public Azure()
@@ -108,7 +108,7 @@ namespace proper_ws.Data
                 var containerClient = _blobServiceClient.GetBlobContainerClient(AzureStorageContainerName);
 
                 // Verificar que el contenedor exista (descomentar si es necesario)
-                await containerClient.CreateIfNotExistsAsync(PublicAccessType.Blob).ConfigureAwait(false);
+                await containerClient.CreateIfNotExistsAsync().ConfigureAwait(false);
                 
                 LoggerHelper.LogMessage("[UploadBytesToAzureStorage] Obteniendo blobClient...");
                 var blobClient = containerClient.GetBlobClient(blobName);
@@ -188,7 +188,7 @@ namespace proper_ws.Data
         }
         public async Task<bool> TestAzureBlobStorageConnectionAsync()
         {
-            string containerName = "agrosispkgseguridadtest"; // Cambia si necesitas
+            string containerName = "agrosispkgseguridadprod"; // Cambia si necesitas
             string testBlobName = $"test_connection_{Guid.NewGuid()}.txt";
             string testContent = "Hola desde WebService - prueba de conexión";
 
