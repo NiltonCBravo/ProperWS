@@ -17,7 +17,7 @@ namespace proper_ws.Ws
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
-    public class WsSecutiryInspectionProd : WebService
+    public class WsSecurityInspection : WebService
     {
 
         private readonly DownloadUserService _downloadUserService;
@@ -26,7 +26,7 @@ namespace proper_ws.Ws
         //private const string LogFilePath = @"C:\temp\WebServiceLog.txt"; 
 
         
-        public WsSecutiryInspectionProd()
+        public WsSecurityInspection()
         {
             _downloadUserService = new DownloadUserService();
             _uploadService = new UploadService();
