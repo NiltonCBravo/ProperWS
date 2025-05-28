@@ -38,7 +38,7 @@ namespace proper_ws
                 // 10.1.10.5
                 // BD_PACKING_AGROMIGIVA_PRD
                 //connection_ = @"Data Source= migivaazure.database.windows.net;Initial Catalog=BD_AGROAMIGO_PROD;Persist Security Info=True;User ID=ucser_agroamigo;Password=AgRF43ExfFDe;";
-                connection_ = @"";
+                connection_ = @"Data Source= 10.1.10.5;Initial Catalog=BD_PACKING_AGROMIGIVA_PRD;Persist Security Info=True;User ID=ucser_agroamigo;Password=AgRF43ExfFDe;";
             }
 
             // sispacking unificacion test
@@ -51,7 +51,7 @@ namespace proper_ws
                 (GlobalVariables.Web_ModoDeveloperSispackingTest == true)
                 )
             {
-                connection_ = @"";
+                connection_ = @"Data Source= 10.1.10.4;Initial Catalog=BD_PACKING_AGROMIGIVA_TEST;User ID=ucser_agroamigo_qa;Password=PrU3b420254;";
             }
 
             // agroamigo  desa
@@ -67,7 +67,7 @@ namespace proper_ws
 
                 //ucser_agroamigo_desa
                 //connection_ = @"Data Source= migivaazure.database.windows.net;Initial Catalog=BD_AGROAMIGO_DESA;Persist Security Info=True;User ID=ucown_agroamigo_desa;Password=D3s4rr0ll024;";
-                connection_ = @"";
+                connection_ = @"Data Source= 10.1.10.4;Initial Catalog=BD_PACKING_AGROMIGIVA_DESA;User ID=ucser_agroamigo_desa;Password=D3s4S3r06;";
             }
 
             // agroamigo qa
@@ -81,7 +81,7 @@ namespace proper_ws
                 )
             {
                 //connection_ = @"Data Source= migivaazure.database.windows.net;Initial Catalog=BD_AGROAMIGO_QA;Persist Security Info=True;User ID=ucser_agroamigo_qa;Password=QAs4rr0ll024;";
-                connection_ = @"";
+                connection_ = @"Data Source= 10.1.10.4;Initial Catalog=BD_PACKING_AGROMIGIVA_QA;User ID=ucser_agroamigo_qa;Password=Q4c4S3r06;";
             }
 
 

@@ -29,7 +29,7 @@ namespace proper_ws
                 && (GlobalVariables.Web_Asist_ModoQA == false)
             )
             {
-                connection_ = @"";
+                connection_ = @"Data Source= 104.46.127.119;Initial Catalog=BD_ASIS_PROD;Persist Security Info=True;User ID=ucown_asis;Password=cBIc3BXd2024;";
             }
 
             // QA
@@ -39,7 +39,7 @@ namespace proper_ws
                 && (GlobalVariables.Web_Asist_ModoQA == true)
             )
             {
-                connection_ = @"";
+                connection_ = @"Data Source= 104.46.127.119;Initial Catalog=BD_ASIS_QA;Persist Security Info=True;User ID=ucown_asis;Password=cBIc3BXd2024;";
             }
 
             // DESA ... dev es prod
@@ -49,7 +49,7 @@ namespace proper_ws
                 && (GlobalVariables.Web_Asist_ModoQA == false)
             )
             {
-                connection_ = @"";
+                connection_ = @"Data Source= 104.46.127.119;Initial Catalog=BD_ASIS_DESA;Persist Security Info=True;User ID=ucown_asis;Password=cBIc3BXd2024;";
             }
 
 
