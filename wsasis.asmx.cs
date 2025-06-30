@@ -32,7 +32,7 @@ namespace proper_ws
         [WebMethod]
         public DataSet DameMS_Calidad(string codigo)
         {
-            GlobalVariables.Web_Asist_ModoDeveloper = true;
+            GlobalVariables.Web_Asist_ModoDeveloper = false;
             GlobalVariables.Web_Asist_ModoQA = false;
 
             DataSet ds = new DataSet();
@@ -44,7 +44,7 @@ namespace proper_ws
         [WebMethod]
         public string WM(int DISPOSITIVO, string USUARIO_SUBIDA, DataSet ds, string UGUID)
         {
-            GlobalVariables.Web_Asist_ModoDeveloper = true;
+            GlobalVariables.Web_Asist_ModoDeveloper = false;
             GlobalVariables.Web_Asist_ModoQA = false;
 
             string subidaok = "0";
@@ -115,7 +115,7 @@ namespace proper_ws
         [WebMethod]
         public DataSet CONS_GUID(string codigo)
         {
-            GlobalVariables.Web_Asist_ModoDeveloper = true;
+            GlobalVariables.Web_Asist_ModoDeveloper = false;
             GlobalVariables.Web_Asist_ModoQA = false;
 
             DataSet ds = new DataSet();
